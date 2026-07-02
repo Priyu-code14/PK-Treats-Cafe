@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PK Treats Menu</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f8f9fa;
+}
+.section-title{
+    font-weight:700;
+}
+.category-btn{
+    border-radius:30px;
+    padding:10px 25px;
+}
+.menu-card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+.menu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+.menu-card img{
+    height:220px;
+    object-fit:cover;
+}
+.price-badge{
+    font-size:14px;
+}
+.order-btn{
+    border-radius:25px;
+}
+.cart-item{
+    border-bottom:1px solid #ddd;
+    padding:10px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container py-5">
+    <!-- Header -->
+    <div class="text-center mb-4">
+        <h5 class="text-warning fw-bold">PK Treats</h5>
+        <h1 class="section-title">Our Delicious Menu</h1>
+        <p class="text-muted">
+            Explore our Cakes, Ice Creams, Snacks and Drinks
+        </p>
+
+        <button
+            class="btn btn-dark position-relative"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartCanvas">
+            <i class="bi bi-cart-fill"></i>
+            Cart
+
+            <span id="cartCount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+            </span>
+        </button>
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="text-center mb-5">
+
+        <button class="btn btn-warning category-btn m-1 filter-btn"
+            data-filter="all">
+            All
+        </button>
+
+        <button class="btn btn-outline-warning category-btn m-1 filter-btn"
+            data-filter="cakes">
+            Cakes
+        </button>
+
+        <button class="btn btn-outline-warning category-btn m-1 filter-btn"
+            data-filter="icecreams">
+            Ice Creams
+        </button>
+
+        <button class="btn btn-outline-warning category-btn m-1 filter-btn"
+            data-filter="snacks">
+            Snacks
+        </button>
+
+        <button class="btn btn-outline-warning category-btn m-1 filter-btn"
+            data-filter="drinks">
+            Drinks
+        </button>
+
+    </div>
+
+    <!-- Menu -->
+    <div class="row g-4">
+
+        <!-- Cake -->
+        <div class="col-md-6 col-lg-4 menu-item cakes">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>Chocolate Cake</h5>
+                        <span class="badge bg-warning text-dark price-badge">₹199</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Rich chocolate cake with creamy frosting.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="Chocolate Cake"
+                        data-price="199">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ice Cream -->
+        <div class="col-md-6 col-lg-4 menu-item icecreams">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>Vanilla Ice Cream</h5>
+                        <span class="badge bg-warning text-dark">₹99</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Creamy vanilla ice cream with toppings.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="Vanilla Ice Cream"
+                        data-price="99">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="col-md-6 col-lg-4 menu-item snacks">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>Veg Burger</h5>
+                        <span class="badge bg-warning text-dark">₹149</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Crispy patty with vegetables.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="Veg Burger"
+                        data-price="149">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cold Coffee -->
+        <div class="col-md-6 col-lg-4 menu-item drinks">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>Cold Coffee</h5>
+                        <span class="badge bg-warning text-dark">₹120</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Chilled coffee with milk.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="Cold Coffee"
+                        data-price="120">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fries -->
+        <div class="col-md-6 col-lg-4 menu-item snacks">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>French Fries</h5>
+                        <span class="badge bg-warning text-dark">₹89</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Crispy golden fries.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="French Fries"
+                        data-price="89">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shake -->
+        <div class="col-md-6 col-lg-4 menu-item drinks">
+            <div class="card menu-card h-100">
+                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800" class="card-img-top">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>Strawberry Shake</h5>
+                        <span class="badge bg-warning text-dark">₹130</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Fresh strawberry milkshake.
+                    </p>
+
+                    <button class="btn btn-warning w-100 order-btn add-cart"
+                        data-name="Strawberry Shake"
+                        data-price="130">
+                        <i class="bi bi-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Cart Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+    <div class="offcanvas-header">
+        <h5>Your Cart</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <div id="cartItems"></div>
+
+        <hr>
+
+        <h5>
+            Total:
+            ₹<span id="cartTotal">0</span>
+        </h5>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+/* FILTER */
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+const menuItems = document.querySelectorAll(".menu-item");
+
+filterBtns.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        const filter = btn.dataset.filter;
+
+        filterBtns.forEach(b=>{
+            b.classList.remove("btn-warning");
+            b.classList.add("btn-outline-warning");
+        });
+        btn.classList.remove("btn-outline-warning");
+        btn.classList.add("btn-warning");
+
+        menuItems.forEach(item=>{
+
+            if(filter==="all" || item.classList.contains(filter)){
+                item.style.display="block";
+            }
+            else{
+                item.style.display="none";
+            }
+
+        });
+
+    });
+
+});
+
+
+/* CART */
+
+let cart = [];
+
+const cartCount = document.getElementById("cartCount");
+const cartItems = document.getElementById("cartItems");
+const cartTotal = document.getElementById("cartTotal");
+
+document.querySelectorAll(".add-cart").forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        const item = {
+            name: button.dataset.name,
+            price: Number(button.dataset.price)
+        };
+
+        cart.push(item);
+
+        updateCart();
+
+    });
+
+});
+
+
+function updateCart(){
+
+    cartItems.innerHTML="";
+
+    let total = 0;
+
+    cart.forEach((item,index)=>{
+
+        total += item.price;
+
+        cartItems.innerHTML += `
+        <div class="cart-item d-flex justify-content-between align-items-center">
+
+            <div>
+                <strong>${item.name}</strong><br>
+                ₹${item.price}
+            </div>
+
+            <button class="btn btn-sm btn-danger"
+                onclick="removeItem(${index})">
+                <i class="bi bi-trash"></i>
+            </button>
+
+        </div>
+        `;
+    });
+    cartCount.innerText = cart.length;
+    cartTotal.innerText = total;
+
+}
+function removeItem(index){
+    cart.splice(index,1);
+    updateCart();
+}
+</script>
+</body>
+</html>
