@@ -83,7 +83,7 @@ body{
     } */
 }
 /* ********************************************************  Hero Section ************************************************************************************ */
- .hero-header {
+ /* .hero-header {
     background:linear-gradient(rgba(1, 14, 46, 0.9),(rgba(15,23,43,.9)),url(../Course/Image/Pizza.png));
     /* background-position: center center;
     background-repeat: no-repeat;
@@ -106,6 +106,32 @@ body{
 }
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
+} */
+.hero-header{
+    background:#0F172B;
+    padding-top:90px;
+}
+
+.hero-header .row{
+    min-height:calc(100vh - 90px);
+}
+
+.hero-img{
+    width:500px;
+    max-width:100%;
+    animation:rotatePizza 30s linear infinite;
+}
+
+@keyframes rotatePizza{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
 }
 /* Section Title */
 .section-title {
