@@ -6,9 +6,7 @@ A modern and responsive cafe website developed using **HTML, CSS, Bootstrap, and
 
 ## 🌐 Live Demo
 
-🔗 https://your-username.github.io/pk-treats-cafe-website/
-
-> Replace the above link with your GitHub Pages URL.
+🔗 https://priyu-code14.github.io/PK-Treats-Cafe/
 
 ---
 
@@ -76,40 +74,41 @@ Open the project folder and launch **index.html** using your preferred browser o
 
 ### 🏠 Home Page
 
-Add screenshot here.
 
 ```
-images/home.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3914cac2-4348-408a-8ca1-f9670b56fe40" />
+
 ```
 
 ---
 
 ### 🍽️ Menu Page
 
-Add screenshot here.
 
 ```
-images/menu.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ae14c735-3284-47c0-8e62-a12f96222a65" />
+
 ```
 
 ---
 
 ### ☕ About Page
 
-Add screenshot here.
+
 
 ```
-images/about.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/919378a6-2590-4c7e-a63f-538e64e4d267" />
+
 ```
 
 ---
 
 ### 📞 Contact Page
 
-Add screenshot here.
 
 ```
-images/contact.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62049766-c881-4256-8f09-862c5f7c2eca" />
+
 ```
 
 ---
