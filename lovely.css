@@ -85,12 +85,12 @@ body{
 /* ********************************************************  Hero Section ************************************************************************************ */
  .hero-header {
     background:linear-gradient(rgba(1, 14, 46, 0.9),(rgba(15,23,43,.9)),url(../Course/Image/Pizza.png));
-    background-position: center center;
+    /* background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
   .hero-header{
-    background:#0F172B;
+    /* background:#0F172B; */
     min-height:100vh;
     display:flex;
     align-items:center;
