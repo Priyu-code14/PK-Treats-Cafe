@@ -77,10 +77,10 @@ body{
         left: 0;
         z-index: 999;
     }
-    .sticky-top.navbar-dark {
+    /* .sticky-top.navbar-dark {
         position: fixed;
         background: var(--dark) !important;
-    }
+    } */
 }
 /* ********************************************************  Hero Section ************************************************************************************ */
  .hero-header {
