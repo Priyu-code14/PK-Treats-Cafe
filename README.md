@@ -76,7 +76,7 @@ Open the project folder and launch **index.html** using your preferred browser o
 
 
 ```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3914cac2-4348-408a-8ca1-f9670b56fe40" />
+![Home Page]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3914cac2-4348-408a-8ca1-f9670b56fe40" />
 
 ```
 
