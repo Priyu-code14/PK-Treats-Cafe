@@ -72,46 +72,24 @@ Open the project folder and launch **index.html** using your preferred browser o
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-
-
-```
-![Home Page]<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3914cac2-4348-408a-8ca1-f9670b56fe40" />
-
-```
-
----
-
-### 🍽️ Menu Page
-
-
-```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ae14c735-3284-47c0-8e62-a12f96222a65" />
-
-```
-
----
-
-### ☕ About Page
-
-
-
-```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/919378a6-2590-4c7e-a63f-538e64e4d267" />
-
-```
-
----
-
-### 📞 Contact Page
-
-
-```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62049766-c881-4256-8f09-862c5f7c2eca" />
-
-```
-
----
+<table>
+  <tr>
+    <td align="center"><strong>🏠 Home Page</strong></td>
+    <td align="center"><strong>🍽️ Menu Page</strong></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/3914cac2-4348-408a-8ca1-f9670b56fe40" width="450"></td>
+    <td><img src="https://github.com/user-attachments/assets/ae14c735-3284-47c0-8e62-a12f96222a65" width="450"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>☕ About Page</strong></td>
+    <td align="center"><strong>📞 Contact Page</strong></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/919378a6-2590-4c7e-a63f-538e64e4d267" width="450"></td>
+    <td><img src="https://github.com/user-attachments/assets/62049766-c881-4256-8f09-862c5f7c2eca" width="450"></td>
+  </tr>
+</table>
 
 ## 🎯 Learning Outcomes
 
