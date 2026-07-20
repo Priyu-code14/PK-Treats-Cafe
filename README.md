@@ -40,11 +40,11 @@ A modern and responsive cafe website developed using **HTML, CSS, Bootstrap, and
 ```
 pk-treats-cafe-website/
 │── index.html
-│── menu pg.html
+│── Menu pg.html
 │── login.html
 │── lovely.css
 │── js/
-│── images/
+│── Image
 │── README.md
 ```
 
