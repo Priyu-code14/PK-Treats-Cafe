@@ -40,11 +40,10 @@ A modern and responsive cafe website developed using **HTML, CSS, Bootstrap, and
 ```
 pk-treats-cafe-website/
 │── index.html
-│── about.html
-│── menu.html
-│── services.html
+│── menu pg.html
+│── login.html
 │── contact.html
-│── css/
+│── lovely.css
 │── js/
 │── images/
 │── README.md
@@ -63,7 +62,7 @@ Download or clone this repository and open **index.html** in your browser.
 Clone using Git:
 
 ```bash
-git clone https://github.com/your-username/pk-treats-cafe-website.git
+git clone https://github.com/Priyu-code14/pk-treats-cafe-website.git
 ```
 
 Open the project folder and launch **index.html** using your preferred browser or Live Server in Visual Studio Code.
