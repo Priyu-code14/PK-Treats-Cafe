@@ -42,7 +42,6 @@ pk-treats-cafe-website/
 │── index.html
 │── menu pg.html
 │── login.html
-│── contact.html
 │── lovely.css
 │── js/
 │── images/
@@ -62,7 +61,7 @@ Download or clone this repository and open **index.html** in your browser.
 Clone using Git:
 
 ```bash
-git clone https://github.com/Priyu-code14/pk-treats-cafe-website.git
+git clone https://github.com/Priyu-code14/PK-Treats-Cafe.git
 ```
 
 Open the project folder and launch **index.html** using your preferred browser or Live Server in Visual Studio Code.
